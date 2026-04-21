@@ -1,0 +1,20 @@
+{
+	"name": "safety-hub",
+	"version": "1.0.0",
+	"description": "A structured public safety resource API for apps, websites, blogs, and information platforms",
+	"main": "apps.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Kevon Senior",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"express-rate-limit": "^8.3.2",
+		"mongodb": "^7.1.1",
+		"mongoose": "^9.4.1",
+		"node-cron": "^4.2.1"
+	}
+}
