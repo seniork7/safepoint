@@ -96,6 +96,45 @@ The **weather alerts pipeline** is complete and serves as the reference implemen
 
 ---
 
+## Sample response
+
+`GET /api/v1/alerts?category=weather&location=toronto&limit=1&offset=0`
+
+```json
+{
+	"previous": null,
+	"total": 167,
+	"category": "weather",
+	"next": "https://api.safepoint.kevonsenior.com/api/v1/alerts?category=weather&offset=2&limit=2",
+	"data": [
+		{
+			"sourceID": "on-142_e",
+			"city": "Toronto",
+			"region": "Toronto and York Region",
+			"category": "weather",
+			"locationCoordinates": [43.7, -79.42],
+			"currentConditions": {
+				"temperature": 14,
+				"humidity": 72,
+				"windSpeed": 19,
+				"windGust": 0,
+				"windChill": 0
+			},
+			"todayForecast": "Mainly cloudy. 40 percent chance of showers in the afternoon. Wind becoming northwest 20 km/h in the afternoon. High 16.",
+			"warnings": [],
+			"source": {
+				"name": "Environment and Climate Change Canada",
+				"url": "https://api.weather.gc.ca"
+			},
+			"lastUpdated": "2026-04-24T14:00:00.000Z"
+		}
+	],
+	"disclaimer": "This information was gather from Environment and Climate Change Canada, please do your due diligence to verify the data before use."
+}
+```
+
+---
+
 ## Deployment
 
 - **API:** [`api.safepoint.kevonsenior.com`](https://api.safepoint.kevonsenior.com) — Render
